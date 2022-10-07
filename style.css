@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #4b5c66;
+}
+.container{
+    --light-color:#fff;
+    height: 50px;
+    width: 150px;
+    background: var(--light-color);
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    box-shadow: 0 0 15px 0 black;
+    transition: .5s;
+}
+.chat{
+    position: relative;
+    align-self: flex-start;
+    bottom: 30px;
+}
+
+.chat-header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #c0068b;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* transition: .5s ease; */
+} 
+.chat-body{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 8px;
+    scroll-behavior: smooth;
+    overflow-y: auto; 
+    align-items: flex-end; 
+   
+}
+.chat-body::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .chat-body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  .chat-body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+.chat-input{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    transition: none;
+}
+.input-sec{
+    flex: 9;
+}
+.send{
+    flex: 1;
+    padding-right: 4px;
+}
+.send i {
+    color: #c0068b;
+    font-size: 20px;
+}
+#txtinput{
+    line-height: 30px;
+    padding:8px 10px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
+}
+/* .User1{
+    background-color: #ccc;
+    width: max-content ;
+    padding:8px;
+    border-radius:10px 3px 10px 10px;
+    margin: 5px;
+    /* box-shadow: 0px 0px 2px 0 black; */
+/* } */ 
+.user-message{
+    background-color: #ccc;
+    padding: 8px;
+    border-radius: 10px 3px 10px 10px;
+    width: max-content;
+    font-size: 0.8rem;
+}
+.chatbot{
+    background-color: #c0068b;
+    padding: 8px;
+    border-radius: 10px 10px 3px 10px;
+    margin-left: 23px;
+    align-self: flex-start;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.chat{
+    position: relative;
+    bottom: 30px;
+}
+#form{
+    position: relative;
+    top: 90px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;  
+    margin: 5px;  
+}
+#txtinput-2{
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#form button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c0068b;
+    width: max-content;
+    margin-left: 120px;
+    box-shadow: 0 0 3px black;
+    color: #fff;
+}
+.nate{
+    margin-top: 30px;
+    font-size: 12px;
+    margin-right: 130px;
+    color: red;
+}
+.nate:nth-child(1),
+.nate:nth-child(3),
+.nate:nth-child(4),
+.nate:nth-child(5),
+.nate:nth-child(6),
+.nate:nth-child(7),
+.nate:nth-child(8),
+.nate:nth-child(9),
+.nate:nth-child(10){
+    display: none;
+}
+.chat-body p{
+    position: absolute;
+    right: 175px;
+    top: 103px;
+    font-size: 13px;
+    color: #c00606;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
